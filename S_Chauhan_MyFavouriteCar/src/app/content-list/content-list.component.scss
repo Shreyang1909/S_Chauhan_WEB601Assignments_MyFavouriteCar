@@ -9,3 +9,16 @@
     padding: 15px;
     margin: 20px;
   }
+
+  div{
+    background-color: navy;
+    color: whitesmoke;
+  }
+  div:nth-of-type(2){
+    background-color:yellow;
+    color:blue;
+  }
+  div:last-of-type{
+    background-color:pink;
+    color: white;
+  }
