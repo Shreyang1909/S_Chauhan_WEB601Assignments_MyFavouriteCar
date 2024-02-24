@@ -4,11 +4,12 @@ import { Content } from '../helper-files/content-interface';
 import { ContentCardComponent } from '../content-card/content-card.component';
 import { TypegiverPipe } from '../typegiver.pipe';
 import { FormsModule } from '@angular/forms';
+import { HoverAffectDirective } from '../hover-affect.directive';
 
 @Component({
   selector: 'app-content-list',
   standalone: true,
-  imports: [CommonModule, ContentCardComponent, TypegiverPipe, FormsModule],
+  imports: [CommonModule, ContentCardComponent, TypegiverPipe, FormsModule, HoverAffectDirective],
   templateUrl: './content-list.component.html',
   styleUrl: './content-list.component.scss'
 })
@@ -86,7 +87,7 @@ export class ContentListComponent implements OnInit {
         title: "Alto K10",
         description: "Alto K10 VXI Specs & Features:Maruti Alto K10 VXI is a 5 seater Petrol car.Alto K10 VXI has Multi-function Steering Wheel, Touch Screen, Anti Lock Braking System, Power Windows Front, Wheel Covers, Passenger Airbag, Driver Airbag, Power Steering, Air Conditioner.",
         creator: "Maruti",
-        imgURL: "https://auto.economictimes.indiatimes.com/files/retail_files/all-new-alto-k10-2022-1661145701-prod-var.jpg",
+        imgURL: "",
         type: ""
       },
       
