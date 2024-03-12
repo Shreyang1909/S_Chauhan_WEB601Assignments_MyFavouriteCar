@@ -3,6 +3,9 @@
 
 <p [ngStyle]="{'color': contentExists ? 'green' : 'red'}">{{ message }}</p>
 
+<h1> display item from single id</h1>
+<app-content-card [contentItem]="items"></app-content-card>
+
 <div>
 <h1>Empty</h1>
 <app-content-card *ngFor="let contentItem of contentItems | typegiver: ''" [contentItem]="contentItem"></app-content-card>
